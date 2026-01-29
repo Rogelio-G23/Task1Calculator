@@ -20,10 +20,14 @@ public class Calculator{
         num2 = scan.nextInt();
 
         switch (choice){
+            case 1 -> result = addition(num1, num2);
         }
 
         System.out.println("Show Result: "+ result);
 
         scan.close();
+    }
+    public static int addition (int num1, int num2){
+        return num1 + num2;
     }
 }
