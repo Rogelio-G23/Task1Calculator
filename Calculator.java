@@ -22,6 +22,7 @@ public class Calculator{
         switch (choice){
             case 1 -> result = addition(num1, num2);
             case 2 -> result = subtraction(num1, num2);
+            case 3 -> result = multiplication(num1, num2);
         }
 
         System.out.println("Show Result: "+ result);
@@ -33,5 +34,8 @@ public class Calculator{
     }
     public static int subtraction (int num1, int num2){
         return num1 - num2;
+    }
+    public static int multiplication (int num1, int num2){
+        return num1 * num2;
     }
 }
